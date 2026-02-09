@@ -412,9 +412,8 @@ ul, ol { list-style: none; }
     .hero-content { max-width: 800px; }
     .hero-title { font-size: var(--text-5xl); }
     .hero-cta-group { 
-        flex-direction: row; 
+        flex-direction: column; 
         align-items: center;
-        gap: var(--space-4);
     }
     
     .benefits-grid { grid-template-columns: repeat(4, 1fr); }
