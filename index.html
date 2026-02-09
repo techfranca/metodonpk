@@ -63,73 +63,35 @@
 </head>
 <body>
     <!-- Urgency Bar -->
-    <div class="urgency-bar" id="urgencyBar">
-        <div class="urgency-content">
-            <svg class="urgency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
-            </svg>
-            <span>Oferta exclusiva por tempo limitado</span>
-            <button class="urgency-close" aria-label="Fechar" onclick="closeUrgencyBar()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"/>
-                    <line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo" aria-label="Escola de Adubação">
-                <img src="assets/logo.jpeg" alt="Escola de Adubação" width="60" height="60">
-            </a>
-            <nav class="nav" aria-label="Navegação principal">
-                <a href="#beneficios" class="nav-link">Benefícios</a>
-                <a href="#conteudo" class="nav-link">Conteúdo</a>
-                <a href="#depoimentos" class="nav-link">Depoimentos</a>
-                <a href="#investimento" class="nav-link cta-nav">Quero me inscrever</a>
-            </nav>
-            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Urgency Header Fixo -->
+    <header class="urgency-header">
+        <div class="urgency-header-content">
+            <div class="urgency-icon-pulse"></div>
+            <span class="urgency-text"><strong>🔥 OFERTA EXCLUSIVA</strong> — Válida apenas até hoje, 23:59</span>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <nav class="mobile-nav">
-            <a href="#beneficios" class="mobile-nav-link">Benefícios</a>
-            <a href="#conteudo" class="mobile-nav-link">Conteúdo</a>
-            <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
-            <a href="#investimento" class="mobile-nav-link cta-mobile">Quero me inscrever</a>
-        </nav>
-    </div>
-
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section - Upsell -->
         <section class="hero" id="hero">
             <div class="hero-bg-pattern"></div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-badge">
+                    <div class="hero-badge-success">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            <polyline points="20,6 9,17 4,12"/>
                         </svg>
-                        Curso Rápido e Prático
+                        Parabéns pela sua compra!
                     </div>
                     <h1 class="hero-title">
-                        Interpretar suas <span class="highlight">Análises de Solo</span> Ficou Bem Mais Fácil!
+                        Espera! Temos uma <span class="highlight">oferta especial</span> para você
                     </h1>
                     <p class="hero-subtitle">
-                        Interprete qualquer Análise e faça as recomendações de Adubação, Calagem e Gessagem para qualquer cultura — mesmo sem formação agronômica.
+                        Aproveite esta oportunidade única de dominar a <strong>Adubação, Calagem e Gessagem</strong> com o Curso Completo Método NPK — com desconto exclusivo para novos alunos.
                     </p>
                     <div class="hero-cta-group">
                         <a href="#investimento" class="btn btn-primary btn-large">
-                            <span>Quero me inscrever agora</span>
+                            <span>Quero aproveitar a oferta</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="5" y1="12" x2="19" y2="12"/>
                                 <polyline points="12,5 19,12 12,19"/>
@@ -137,13 +99,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="hero-scroll-indicator">
-                <span>Role para descobrir mais</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="7,13 12,18 17,13"/>
-                    <polyline points="7,6 12,11 17,6"/>
-                </svg>
             </div>
         </section>
 
@@ -648,17 +603,22 @@
                                 </div>
                             </div>
                             <div class="pricing-price">
+                                <div class="price-original">
+                                    De <s>R$597,00</s> por apenas
+                                </div>
                                 <div class="price-installment">
-                                    <span class="price-prefix">apenas</span>
                                     <span class="price-main">12x</span>
-                                    <span class="price-value">R$39,62</span>
+                                    <span class="price-value">R$19,70</span>
                                 </div>
                                 <div class="price-full">
-                                    ou <strong>R$397,00</strong> à vista
+                                    ou <strong>R$197,00</strong> à vista
+                                </div>
+                                <div class="price-savings">
+                                    Você economiza R$400,00
                                 </div>
                             </div>
                             <a href="https://pay.hotmart.com/A97199658D?checkoutMode=10" class="btn btn-primary btn-cta" id="cta-button">
-                                <span>Sim, quero me inscrever agora!</span>
+                                <span>SIM! Quero aproveitar esta oferta</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <line x1="5" y1="12" x2="19" y2="12"/>
                                     <polyline points="12,5 19,12 12,19"/>
